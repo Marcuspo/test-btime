@@ -7,4 +7,4 @@ Como rodar o projeto:
  - `O programa irá abrir uma aba no navegador e já estará funcionando normalmente.`
  
 
-Sistema rodando também no netlify, link aqui()
+Sistema rodando também no netlify, link aqui(https://pensive-darwin-0d2491.netlify.app/)
