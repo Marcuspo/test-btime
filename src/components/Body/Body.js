@@ -13,15 +13,12 @@ function Body() {
 
   const handleClose = () => setShow(false)
 
-  useEffect(() => {
-    getDadosOrdered()
-  }, [search])
-
   function handleShow(details) {
     setShow(true)
     setDetails(details)
   }
-  function getDadosOrdered() {
+
+  useEffect(() => {
     const standings = {}
 
     medalists.forEach((item) => {
@@ -51,7 +48,7 @@ function Body() {
       return names[0].toLowerCase().includes(search.toLowerCase())
     })
     setResults(filterednames)
-  }
+  }, [search])
 
   return (
     <div>
