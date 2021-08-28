@@ -1,13 +1,14 @@
 import Body from "./components/Body/Body"
 import Topo from "./components/Topo/Topo"
 
-import { Container } from "./styles"
+import { Container, GlobalStyle } from "./styles"
 
 function App() {
   return (
     <Container>
       <Topo />
       <Body />
+      <GlobalStyle />
     </Container>
   )
 }
