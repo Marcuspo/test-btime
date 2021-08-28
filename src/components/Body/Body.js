@@ -1,5 +1,7 @@
 import { Table, Th, Tr, Td, Busca } from "./styles"
 
+import { CgGenderFemale, CgGenderMale } from "react-icons/cg"
+
 import { medalists } from "../api/medalists"
 import { useEffect, useState } from "react"
 
@@ -101,7 +103,14 @@ function Body() {
                       <strong>Name: {name.name} </strong>
                       <p>
                         Event: {name.event}
-                        <p>Sex: {name.sex}</p>
+                        <p>
+                          Sex:{" "}
+                          {name.sex === "Women" ? (
+                            <CgGenderFemale style={{ color: "red" }} />
+                          ) : (
+                            <CgGenderMale style={{ color: "blue" }} />
+                          )}
+                        </p>
                       </p>
                     </p>
                   )
